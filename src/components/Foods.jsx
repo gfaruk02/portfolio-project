@@ -5,13 +5,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
 const Foods = () => {
+    useEffect(()=>{
+        Aos.init();
+    },[])
     return (
-        <div className='bg-white rounded-lg w-full'>
+        <div data-aos="fade-up"
+        data-aos-duration="3000" className='bg-white rounded-lg w-full'>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
@@ -47,7 +54,7 @@ const Foods = () => {
                                 <section className="dark:bg-sky-800 dark:text-gray-100">
                                     <div className="container flex flex-col justify-center  mx-auto lg:flex-row lg:justify-between">
                                         <div className="flex items-center justify-center  bg-sky-900 rounded-xl">
-                                            <img className="w-full h-[300px]" src="https://i.ibb.co/wQSnryt/food1.jpg" alt="" />
+                                            <img className="w-full lg:h-[300px]" src="https://i.ibb.co/wQSnryt/food1.jpg" alt="" />
                                         </div>
                                         <div className="pl-1 md:pl-4 flex flex-col justify-center text-left rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                                             <h1 className="text-xl font-semibold"> Description:</h1>
@@ -71,7 +78,7 @@ const Foods = () => {
                             <div className="modal-action flex  items-center">
                                 <button className=" mr-6 py-3 px-5 bg-sky-600 text-sm md:text-xl text-white rounded-lg"> <a href="https://assignment-11-7-food-sharing.web.app/" target="_blank"
                                     rel="noopener noreferrer"
-                                    className="mr-6 py-3 px-5 bg-sky-600 text-sm md:text-xl text-white rounded-lg">View Live Project </a></button>
+                                    className="mr-6 py-3 px-5 bg-sky-600 text-sm md:text-xl text-white rounded-lg">View Live </a></button>
                                 <form method="dialog">
                                     {/* if there is a button, it will close the modal */}
                                     <button className=" ml-6 btn text-rose-900 text-xl md:text-2xl">✕</button>

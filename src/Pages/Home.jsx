@@ -9,7 +9,7 @@ import Skills from "./Skills";
 
 const Home = () => {
     return (
-        <div id="home" className="bg-blue-950">
+        <div id="home" className="bg-blue-950 z-10 overflow-hidden">
             <div className=" sticky top-0 z-50">
             <Navbar></Navbar>
             </div>

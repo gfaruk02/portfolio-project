@@ -5,14 +5,21 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 // import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
 const Fashion = () => {
+    useEffect(()=>{
+        Aos.init();
+    },[])
     return (
 
-        <div className='bg-white rounded-lg w-full'>
+        <div data-aos="zoom-in" className='bg-white rounded-lg w-full'>
             <Swiper
                 slidesPerView={1}
                 spaceBetween={30}
@@ -48,7 +55,7 @@ const Fashion = () => {
                                 <section className="dark:bg-sky-800 dark:text-gray-100">
                                     <div className="container flex flex-col justify-center  mx-auto lg:flex-row lg:justify-between">
                                         <div className="flex items-center justify-center  bg-sky-900 rounded-xl">
-                                            <img className="w-full h-[300px]" src="https://i.ibb.co/7yS3gwd/F-F-FASHION-SHOP.jpg" alt="" />
+                                            <img className="w-full lg:h-[300px]" src="https://i.ibb.co/7yS3gwd/F-F-FASHION-SHOP.jpg" alt="" />
                                         </div>
                                         <div className="pl-1 md:pl-4 flex flex-col justify-center text-left rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
                                             <h1 className="text-xl font-semibold"> Description:</h1>
@@ -74,9 +81,9 @@ const Fashion = () => {
                                     href="https://assignment-10-fashion-client.web.app/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="mr-6 py-3 px-5 bg-sky-600 text-sm md:text-xl text-white rounded-lg"
+                                    className="mr-6 py-3 px-3 md:px-5  bg-sky-600 text-sm md:text-xl text-white rounded-lg"
                                 >
-                                    View Live Project
+                                   View Live
                                 </a></button>
                                 <form method="dialog">
                                     {/* if there is a button, it will close the modal */}

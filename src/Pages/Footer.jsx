@@ -15,7 +15,7 @@ const Footer = () => {
     return (
         <div>
             <footer className="footer footer-center mt-10 p-10 text-base-content rounded bg-sky-900 ">
-                <nav data-aos="fade-up-right" className="grid grid-flow-col gap-4 text-white text-2xl font-semibold">
+                <nav data-aos="fade-up-right" className="grid grid-flow-col gap-3 md:gap-5 text-white text-lg md:text-2xl font-semibold">
                     <a href="#home" className="link link-hover">Home</a>
                     <a href="#about" className="link link-hover">About us</a>
                     <a href="#projects" className="link link-hover">Projects</a>
