@@ -1,8 +1,15 @@
 import { FaSwatchbook } from "react-icons/fa";
 import { GiSkills } from "react-icons/gi";
 import { FaPersonCirclePlus } from "react-icons/fa6";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 
 const Skills = () => {
+    useEffect(()=>{
+        Aos.init();
+    },[])
     return (
         <div className="text-white mb-10">
             <section className="m-4 md:m-8 dark:bg-gray-800 dark:text-gray-100">
@@ -10,7 +17,7 @@ const Skills = () => {
                     <h2 className="text-5xl font-bold">Set of My Skills</h2>
                 </div>
                 <div className="container mx-auto grid justify-center gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
-                    <div className="flex flex-col items-center p-4">
+                    <div data-aos="fade-right" className="flex flex-col items-center p-4">
                       
                         <GiSkills className="w-8 h-8 dark:text-violet-400" />
                         <h3 className="my-3 text-2xl font-semibold">Expertise</h3>
@@ -20,7 +27,7 @@ const Skills = () => {
                             <p>React, ExpressJS, MongoDB</p>
                         </div>
                     </div>
-                    <div className="flex flex-col items-center p-4">
+                    <div data-aos="fade-up" className="flex flex-col items-center p-4">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-8 h-8 dark:text-violet-400">
                             <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"></path>
                         </svg>
@@ -32,7 +39,7 @@ const Skills = () => {
                         </div>
 
                     </div>
-                    <div className="flex flex-col items-center p-4">
+                    <div data-aos="fade-down" className="flex flex-col items-center p-4">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-8 h-8 dark:text-violet-400">
                             <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd"></path>
                         </svg>
@@ -53,7 +60,7 @@ const Skills = () => {
                             {/* <p>Blanditiis aut mollitia ex</p> */}
                         </div>
                     </div>
-                    <div className="flex flex-col items-center py-4 px-2">
+                    <div data-aos="fade-left" className="flex flex-col items-center py-4 px-2">
                     
                         <FaPersonCirclePlus className="w-8 h-8 dark:text-violet-400" />
                         <h3 className="my-3 text-2xl font-semibold">Interpersonal
