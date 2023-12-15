@@ -5,12 +5,19 @@ import { FaArrowRight } from "react-icons/fa6";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 
 const Header = () => {
     useEffect(() => {
         Aos.init();
     }, [])
+
+    const [text] = useTypewriter({
+        words: ['FULL STACK ', 'MERN STACK ', 'WEB', 'FRONT-END WEB', 'BACK-END WEB'],
+        loop: 3,
+        onLoopDone: () => console.log(`loop completed after 3 runs.`)
+      })
     return (
         <div>
             <section className="dark:bg-gray-800 dark:text-gray-100 lg:h-[100vh]">
@@ -20,8 +27,11 @@ const Header = () => {
                             GOLAM Faruk
                         </h1>
                         <h1 data-aos="fade-left" className="text-4xl font-bold leadi sm:text-5xl text-sky-600">
-                            I AM A  <br />
-                            <span className="font-extrabold">FULL STACK DEVELOPER</span>
+                            I AM A  <br /> 
+                            <span className="font-extrabold">{text}</span>
+                             <Cursor cursorColor='red' />
+                             <br />
+                            <span >DEVELOPER</span>
                         </h1>
                         <p data-aos="fade-down" className="mt-3 mb-8 text-lg sm:mb-12 text-white">I merge functionality to build responsive websites. Highly skilled and motivated Full Stack Developer in creating responsive and visually captivating user interfaces and growing in a collaborative team environment. I always love to learn new technology and like to do challenging work. Lets connect and craft innovative solutions together!
                         </p>
