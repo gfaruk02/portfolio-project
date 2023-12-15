@@ -14,11 +14,14 @@ const About = () => {
                 > Download Resume </a></h1>
             </div>
             <div className="hero-content flex-col lg:flex-row" ></div>
-            <div className="hero min-h-screen bg-blue-950" style={{
-                backgroundImage: 'url(https://i.ibb.co/pPjb0Zh/web-development-0.jpg)', backgroundSize: 'cover',
-                backgroundPosition: 'center',
+            <div className="hero min-h-screen bg-blue-950" 
+            // style={{
+            //     backgroundImage: 'url(https://i.ibb.co/T4wzG7L/maxresdefault.jpg)', backgroundSize: 'cover',
+            //     backgroundPosition: 'center',
 
-            }}>
+            // }}
+            
+            >
                 <div className="hero-content flex-col lg:flex-row" >
 
                     <div className="w-full text-white" data-aos="fade-left">
@@ -51,8 +54,14 @@ const About = () => {
                         data-aos-easing="linear"
                         data-aos-duration="1500" className="w-full h-full " >
 
-                        <img src="https://i.ibb.co/7tKrkX2/faruk-2.png" className="lg:w-[650px] lg:h-[500px] rounded-lg shadow-2xl " />
+                        <img src="https://i.ibb.co/7tKrkX2/faruk-2.png" className="lg:w-[650px] lg:h-[500px] " />
                     </div>
+{/* <div className="avatar">
+  <div className="w-24 mask mask-squircle">
+    <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+  </div>
+</div> */}
+                    
                 </div>
             </div>
 

@@ -69,12 +69,16 @@ const Header = () => {
                     </div>
                     <div data-aos="fade-up"
                         data-aos-anchor-placement="bottom-bottom" className="flex items-center justify-center p-6 mt-12 lg:mt-16 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 lg:mr-36">
-                        <div className="flex flex-col max-w-md p-12 w-full" style={{
-                            backgroundImage: 'url(https://i.ibb.co/pPjb0Zh/web-development-0.jpg)', backgroundSize: 'cover',
-                            backgroundPosition: 'center',
+                        <div className="flex flex-col max-w-md p-12 w-full" 
+                        // style={{
+                        //     backgroundImage: 'url(https://i.ibb.co/pPjb0Zh/web-development-0.jpg)', backgroundSize: 'cover',
+                        //     backgroundPosition: 'center',
 
-                        }}>
-                            <img src="https://i.ibb.co/2PnQm5n/faruk.png" alt="" className="flex-shrink-0 object-cover h-64 rounded-sm sm:h-96 dark:bg-gray-500 aspect-square w-72" />
+                        // }}
+                        >
+                            <div className="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <img src="https://i.ibb.co/2PnQm5n/faruk.png" alt="" className="flex-shrink-0 object-cover rounded-full ring ring-primary ring-offset-base-100 ring-offset-2" />
+                            </div>
                         </div>
 
                     </div>
