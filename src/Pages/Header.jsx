@@ -15,7 +15,10 @@ const Header = () => {
 
     const [text] = useTypewriter({
         words: ['FULL STACK ', 'MERN STACK ', 'WEB', 'FRONT-END WEB', 'BACK-END WEB'],
-        loop: 3,
+        loop: {},
+        typeSpeed:70,
+        deleteSpeed:50,
+        delaySpeed:1000,
         onLoopDone: () => console.log(`loop completed after 3 runs.`)
       })
     return (
@@ -28,8 +31,8 @@ const Header = () => {
                         </h1>
                         <h1 data-aos="fade-left" className="text-4xl font-bold leadi sm:text-5xl text-sky-600">
                             I AM A  <br /> 
-                            <span className="font-extrabold">{text}</span>
-                             <Cursor cursorColor='red' />
+                            <span className="font-extrabold text-sky-500">{text}</span>
+                             <Cursor cursorColor='sky' />
                              <br />
                             <span >DEVELOPER</span>
                         </h1>
