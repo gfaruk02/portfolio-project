@@ -22,10 +22,9 @@ const Header = () => {
         onLoopDone: () => console.log(`loop completed after 3 runs.`)
       })
     return (
-        <div>
-            <section className="dark:bg-gray-800 dark:text-gray-100 lg:h-[100vh]">
-                <div className="container flex flex-col justify-center px-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-                    <div className="flex flex-col justify-center px-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left md:mb-12">
+            <section className="dark:bg-gray-800 dark:text-gray-100 ">
+                <div className="container flex flex-col justify-center px-4 mx-auto sm:py-12 lg:pt-16 lg:flex-row lg:justify-between">
+                    <div className="flex flex-col justify-center px-4 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left md:mb-20 lg:mb-5">
                         <h1 data-aos="fade-right" className="text-4xl font-bold leadi sm:text-5xl uppercase text-white">Hay!, I am <br />
                             GOLAM Faruk
                         </h1>
@@ -68,7 +67,7 @@ const Header = () => {
                         </div>
                     </div>
                     <div data-aos="fade-up"
-                        data-aos-anchor-placement="bottom-bottom" className="flex items-center justify-center p-6 mt-12 lg:mt-16 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 lg:mr-36">
+                        data-aos-anchor-placement="bottom-bottom" className="flex items-center justify-center p-6 my-12 lg:mt-16 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 lg:mr-36">
                         <div className="flex flex-col max-w-md p-12 w-full" 
                         // style={{
                         //     backgroundImage: 'url(https://i.ibb.co/pPjb0Zh/web-development-0.jpg)', backgroundSize: 'cover',
@@ -76,15 +75,14 @@ const Header = () => {
 
                         // }}
                         >
-                            <div className="rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                            <img src="https://i.ibb.co/2PnQm5n/faruk.png" alt="" className="flex-shrink-0 object-cover rounded-full ring ring-primary ring-offset-base-100 ring-offset-2" />
+                            <div className="rounded-full shadow-md shadow-sky-400 ring ring-primary ring-offset-base-100 ring-offset-2">
+                            <img src="https://i.ibb.co/2PnQm5n/faruk.png" alt="" className="flex-shrink-0 object-cover rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 shadow-2xl shadow-sky-400" />
                             </div>
                         </div>
 
                     </div>
                 </div>
             </section>
-        </div>
     );
 };
 
